@@ -1,28 +1,17 @@
-// let obj = {
-//     name:"rahul",
-//     age:89,
-//     address:"rahul nagar",
-//     company:"google"
-// };
+// // console.log(React)
 
-// let fn = ({name, company}) => {
-//     console.log(name, company);
-// };
-
-// fn(obj);
+// let rh1 = React.createElement("h1", {}, React.createElement('span', {}, "i am under"));
+// console.log(rh1)
 
 
+// console.log(ReactDOM)
 
-// Q2
-// let a = 990;
+import React from "react";
+import {a} from "./main.js";
+import {sum} from "./main.js"
+// console.log(a);
+console.log(sum(5,6))
+let domElement = document.querySelector("#root");
+let div = React.createElement('div', {}, "i am Div");
 
-// let print = () => {
-//     console.log(a);
-// };
-
-// let ab = () => {
-//     let a = 80;
-//     print();
-// };
-
-// ab();
+ReactDOM.createRoot(domElement).render(div);
